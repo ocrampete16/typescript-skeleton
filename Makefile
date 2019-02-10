@@ -2,10 +2,13 @@
 
 default: test
 
-build:
+build: node_modules
 	node_modules/.bin/tsc
 
-test:
+test: node_modules
 	node_modules/.bin/prettier --check **.{json,ts}
 	node_modules/.bin/tslint --project .
 	node_modules/.bin/jest
+
+node_modules: package.json package-lock.json
+	npm install
