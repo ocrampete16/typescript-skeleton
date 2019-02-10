@@ -1,3 +1,2 @@
-export default function hello(name: string): string {
-  return `Hello ${name}!`;
-}
+export const hello: (name: string) => string = (name: string): string =>
+  `Hello ${name}!`;
