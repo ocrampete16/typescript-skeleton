@@ -1,4 +1,4 @@
-.PHONY: build test
+.PHONY: default build test
 
 default: test
 
