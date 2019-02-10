@@ -2,6 +2,7 @@
   "name": "typescript-skeleton",
   "license": "MIT",
   "devDependencies": {
+    "jest": "^24.1.0",
     "typescript": "^3.3.3"
   }
 }
